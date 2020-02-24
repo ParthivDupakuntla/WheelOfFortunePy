@@ -21,7 +21,7 @@ class WOFPlayer:
 class WOFHumanPlayer(WOFPlayer):
     def __init__(self,name):
         WOFPlayer.__init__(self,name)
-    def getmove(self, category, obscuredPhrase, guessed):
+    def getMove(self, category, obscuredPhrase, guessed):
         user_input = input("{} has ${}\nCategory: {}\nPhrase: {}\nGuessed: {}\n\n\nGuess a letter, phrase, or type 'exit' or 'pass':".format(self.name,self.prizeMoney,self.category,self.obscuredPhrase,self.guessed))
         print(user_input)
 # Computer Player Class
